@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>역사</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <!--  link   -->
+    <th:block th:insert="~{fragments/link :: linkFragment}" />
+
+
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <!-- 헤더 -->
+        <th:block th:insert="~{fragments/topHeader :: topHeaderFragment}" />
+        <!-- 내비게이션 -->
+        <th:block th:insert="~{fragments/nav :: navFragment}" />
+    </header>
+    <main>
+        <section>
+            <div class="section_sam">
+                <a href=""> 삼국시대</a>
+                <hr>
+                <div class="gogu">
+                    <a href="" style="font-size:18px">고구려</a>
+                    <img src="/assets/고구려.png">
+                </div>
+                <div class="shinla">
+                    <a href="" style="font-size:18px" >신라</a>
+                    <img src="/assets/신라화랑.jpg">
+                </div>
+                <div class="backjae">
+                    <a href="" style="font-size:18px">백제</a>
+                    <img>
+                </div>
+            </div>
+            <div class="section_go">
+                <hr>
+                <a href="">고려시대</a>
+                <div></div>
+            </div>
+            <div class="section_jo">
+                <hr>
+                <a href="">조선시대</a>
+                <div></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- 푸터 -->
+        <th:block th:insert="~{fragments/footer :: footerFragment}" />
+    </footer>
+</div>
+
+</body>
+</html>
